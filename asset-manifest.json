@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sunshine-and-suds/static/css/main.ca7d2696.css",
+    "main.js": "/sunshine-and-suds/static/js/main.f2cd0d19.js",
+    "static/js/453.fbee2d1e.chunk.js": "/sunshine-and-suds/static/js/453.fbee2d1e.chunk.js",
+    "static/media/splash-image.webp": "/sunshine-and-suds/static/media/splash-image.04d801e13665d27dd5d9.webp",
+    "index.html": "/sunshine-and-suds/index.html",
+    "main.ca7d2696.css.map": "/sunshine-and-suds/static/css/main.ca7d2696.css.map",
+    "main.f2cd0d19.js.map": "/sunshine-and-suds/static/js/main.f2cd0d19.js.map",
+    "453.fbee2d1e.chunk.js.map": "/sunshine-and-suds/static/js/453.fbee2d1e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca7d2696.css",
+    "static/js/main.f2cd0d19.js"
+  ]
+}
