@@ -59,7 +59,7 @@ function App() {
               <div className="hero-logo-container">
                 {/* Replace '/logo.png' with your actual logo file path */}
                 <img
-                  src="/Pastel Lo.png"
+                  src={process.env.PUBLIC_URL + '/Pastel Lo.png'}
                   alt="Sunshine & Suds Logo"
                   className="hero-logo"
                   style={{
@@ -105,7 +105,7 @@ function App() {
           </div>
           <div className="about-content">
             <img 
-              src="/about_image.jpg" 
+              src={process.env.PUBLIC_URL + '/about_image.jpg'} 
               alt="Sunshine & Suds Team" 
               className="about-image"
             />
