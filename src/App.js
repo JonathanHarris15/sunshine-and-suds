@@ -62,12 +62,6 @@ function App() {
                   src={process.env.PUBLIC_URL + '/Pastel Lo.png'}
                   alt="Sunshine & Suds Logo"
                   className="hero-logo"
-                  style={{
-                    maxWidth: "40vw",
-                    width: "100%",
-                    margin: "-10vhb auto 0 auto",
-                    display: "block"
-                  }}
                 />
               </div>
               <h1 className="hero-title">A little sunshine for your week.</h1>

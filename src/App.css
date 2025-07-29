@@ -80,18 +80,24 @@ body {
 
 /* --- HERO SECTION --- */
 .hero-section {
-  min-height: 90vh; /* Made it taller */
+  min-height: 90vh;
   color: white;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* Image background */
   background-image: url('./splash-image.webp');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Parallax effect */
+  background-attachment: fixed;
+  padding-top: 90px; /* Add this line: adjust to match or slightly exceed your .app-header height */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 110px; /* Slightly more for stacked mobile nav */
+  }
 }
 
 .hero-overlay {
@@ -110,6 +116,18 @@ body {
     padding: 20px;
 }
 
+.hero-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-logo {
+  width: 30vh;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .hero-title {
   font-family: var(--font-heading); /* Apply calligraphy font */
   font-size: clamp(4rem, 10vw, 7rem); /* Larger size for script font */
