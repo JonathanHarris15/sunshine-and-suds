@@ -1,19 +1,45 @@
+@font-face {
+  font-family: 'Bogart';
+  src: url('./fonts/Bogart-Light-trial.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bogart';
+  src: url('./fonts/Bogart-Bold-trial.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* --- FONT IMPORTS (Calligraphy & Body) --- */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@300;400;700&display=swap');
 
+
 /* --- CSS VARIABLES & GLOBAL STYLES --- */
 :root {
-  --light-blue: #E0F7FA;
+  --light-blue: #F0F8FF; /* AliceBlue - a very light, soft blue for the new background */
   --sky-blue: #58b9df;
   --golden-yellow: #FFD700;
   --dark-text: #555;
-  --background-color: #FFFFFF;
-  --font-main: 'Lato', sans-serif;
-  --font-heading: 'Dancing Script', cursive; /* New heading font */
+  --background-color: #F0F8FF; /* New Background Color */
+  --font-main: 'Bogart', sans-serif;
+  --font-heading: 'Dancing Script', cursive;
 }
-
+.content-section p {
+  font-family: "Bogart", sans-serif; /* Add this line */
+  font-size: 1.15rem;
+  line-height: 1.9;
+  max-width: 750px;
+  margin: 1rem auto;
+}
+.numbers {
+  font-family: 'Lato', Arial, sans-serif;
+  font-variant-numeric: lining-nums;
+}
 html {
   scroll-behavior: smooth;
+  font-family: "Bogart", sans-serif;
 }
 
 body {
@@ -42,9 +68,9 @@ body {
 }
 
 .logo {
-  font-family: var(--font-heading); /* Apply calligraphy font */
+  font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 2.2rem; /* Increased size for script font */
+  font-size: 2.2rem;
   color: var(--sky-blue);
 }
 
@@ -91,17 +117,10 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-top: 90px; /* Add this line: adjust to match or slightly exceed your .app-header height */
-}
-
-@media (max-width: 768px) {
-  .hero-section {
-    padding-top: 110px; /* Slightly more for stacked mobile nav */
-  }
 }
 
 .hero-overlay {
-  background: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   left: 0;
@@ -112,33 +131,19 @@ body {
   justify-content: center;
 }
 
-.hero-content {
-    padding: 20px;
-}
-
 .hero-logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .hero-logo {
   width: 30vh;
+  max-width: 250px;
   height: auto;
-  display: block;
-  margin: 0 auto;
-}
-.hero-title {
-  font-family: var(--font-heading); /* Apply calligraphy font */
-  font-size: clamp(4rem, 10vw, 7rem); /* Larger size for script font */
-  font-weight: 700;
-  margin: 0;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
 .hero-subtitle {
   font-size: 1.3rem;
-  font-weight: 400; /* Slightly bolder for readability on image */
+  font-weight: 400;
   max-width: 650px;
   margin: 20px auto 35px;
   line-height: 1.7;
@@ -162,27 +167,103 @@ body {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* --- HOW IT WORKS / FEATURES --- */
-.features-section {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    gap: 30px;
-    flex-wrap: wrap;
+/* --- FEATURES GRID SECTION --- */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-.feature {
-    flex-basis: 280px;
+.feature-item {
+  text-align: center;
 }
 .feature-icon {
-    color: var(--golden-yellow);
-    margin-bottom: 15px;
+  width: 48px;
+  height: 48px;
+  color: var(--sky-blue);
+  margin-bottom: 1rem;
 }
-.feature h3 {
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: #333;
-    margin-bottom: 10px;
+.feature-icon-bg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
 }
+/* 1st icon (Calendar) */
+.features-grid .feature-item:nth-child(1) .feature-icon {
+  transform: translateY(5px);
+}
+
+/* 2nd icon (Droplet) */
+.features-grid .feature-item:nth-child(2) .feature-icon {
+  transform: translateY(5px);
+}
+
+/* 3rd icon (Sparkle) */
+.features-grid .feature-item:nth-child(3) .feature-icon {
+  transform: translateY(7px) translateX(-1px);
+}
+
+/* 4th icon (Check) */
+.features-grid .feature-item:nth-child(4) .feature-icon {
+  transform: translateY(8px) translateX(-2px);
+}
+.feature-item h3 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* --- PRICING SECTION --- */
+.pricing-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  text-align: left;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+.price-main {
+  flex-basis: 300px;
+  flex-grow: 1;
+  text-align: center;
+}
+.price-main .price-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--sky-blue);
+  margin: 10px 0;
+}
+.price-large-items {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+.price-large-items ul {
+  list-style: none;
+  padding: 0;
+}
+.price-large-items li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.disclaimer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
 
 /* --- CONTENT SECTIONS --- */
 .content-section {
@@ -197,11 +278,11 @@ body {
 }
 
 .section-header h2 {
-  font-family: var(--font-heading); /* Apply calligraphy font */
-  font-size: 4rem; /* Increased size for script font */
+  font-family: var(--font-heading);
+  font-size: 4rem;
   font-weight: 700;
   margin: 0;
-  color: #333;
+  color: var(--sky-blue);
 }
 
 .content-section p {
@@ -214,39 +295,55 @@ body {
 /* --- ABOUT SECTION SPECIFICS --- */
 .about-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 50px;
     text-align: left;
 }
+.about-image-container {
+  flex-shrink: 0;
+  position: relative;
+  padding: 10px; /* This creates the space for the border */
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
 .about-image {
     width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    height: 350px;
     object-fit: cover;
-    flex-shrink: 0;
+    display: block;
+}
+.about-text .verse {
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--golden-yellow);
+  font-style: italic;
+}
+.about-text .verse p {
+  margin: 0;
+  line-height: 1.6;
+}
+.about-text .verse strong {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  margin-top: 0.5rem;
 }
 
 /* --- GOOGLE FORM --- */
 .google-form-container {
   width: 100%;
-  height: 700px; /* or any height you want */
   border-radius: 12px;
   overflow: hidden;
-  /* Optional: */
-  display: flex;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  min-height: 700px;
 }
-.google-form-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-}
+
 /* --- FOOTER --- */
 .app-footer {
   text-align: center;
   padding: 50px 20px;
   margin-top: 60px;
-  background-color: var(--light-blue);
+  background-color: #e0eaf0;
   color: var(--sky-blue);
   font-weight: 400;
 }
@@ -261,16 +358,12 @@ body {
         flex-direction: column;
         text-align: center;
     }
-    .features-section {
-        flex-direction: column;
-        gap: 50px;
+    .about-content .section-header {
+      text-align: center;
     }
     .app-header {
         flex-direction: column;
         gap: 15px;
-    }
-    .hero-title {
-        font-size: 4rem;
     }
     .section-header h2 {
         font-size: 3rem;

@@ -1,43 +1,44 @@
 import React from 'react';
 import './App.css';
 
-// --- SVG Icons for a clean, modern look ---
+// --- NEW SVG Icons for your features ---
 
-const SunIcon = () => (
-  <svg
-    className="feature-icon"
-    width="48"
-    height="48"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="#FFD700"
-    strokeWidth="0.7"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="12" cy="12" r="5" fill="#ffffffff" stroke="#FFD700" strokeWidth="0.7"/>
-    <g stroke="#FFD700" strokeWidth="0.7">
-      <line x1="12" y1="1.5" x2="12" y2="4"/>
-      <line x1="12" y1="20" x2="12" y2="22.5"/>
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-      <line x1="1.5" y1="12" x2="4" y2="12"/>
-      <line x1="20" y1="12" x2="22.5" y2="12"/>
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-    </g>
-  </svg>
+const CalendarIcon = () => (
+  <svg className="feature-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
 );
-const ShirtIcon = () => (
-    <svg className="feature-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path></svg>
+
+const PriceIcon = () => (
+  <svg className="feature-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
 );
 
 const SparkleIcon = () => (
-  <svg className="feature-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 256" fill="none">
-    <path d="M197.00781,132.74023l-52.16015-19.21777a3.99186,3.99186,0,0,1-2.3711-2.37012L123.25977,58.99219a11.99948,11.99948,0,0,0-22.51954,0L81.52246,111.15234a3.99186,3.99186,0,0,1-2.37012,2.3711L26.99219,132.74023a11.99948,11.99948,0,0,0,0,22.51954l52.16015,19.21777a3.99186,3.99186,0,0,1,2.3711,2.37012l19.21679,52.16015a11.99948,11.99948,0,0,0,22.51954,0l19.21679-52.16015h.001a3.99186,3.99186,0,0,1,2.37012-2.3711l52.16015-19.21679a11.99948,11.99948,0,0,0,0-22.51954Zm-2.76562,15.01368L142.082,166.96973a11.98076,11.98076,0,0,0-7.11133,7.1123l-19.21679,52.16016a4.00076,4.00076,0,0,1-7.50782,0L89.03027,174.082a11.98076,11.98076,0,0,0-7.1123-7.11133L29.75781,147.75391a4.00076,4.00076,0,0,1,0-7.50782L81.918,121.03027a11.98076,11.98076,0,0,0,7.11133-7.1123l19.21679-52.16016a4.00076,4.00076,0,0,1,7.50782,0L134.96973,113.918a11.98076,11.98076,0,0,0,7.1123,7.11133l52.16016,19.21679a4.00076,4.00076,0,0,1,0,7.50782ZM148,40a4.0002,4.0002,0,0,1,4-4h20V16a4,4,0,0,1,8,0V36h20a4,4,0,0,1,0,8H180V64a4,4,0,0,1-8,0V44H152A4.0002,4.0002,0,0,1,148,40Zm96,48a4.0002,4.0002,0,0,1-4,4H228v12a4,4,0,0,1-8,0V92H208a4,4,0,0,1,0-8h12V72a4,4,0,0,1,8,0V84h12A4.0002,4.0002,0,0,1,244,88Z" fill="#FFD700"/>
+  <svg className="feature-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+    {/* Main star */}
+    <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2z"></path>
+    {/* Symmetric rays */}
+    <line x1="12" y1="0.5" x2="12" y2="4"></line>
+    <line x1="12" y1="20" x2="12" y2="23.5"></line>
+    <line x1="0.5" y1="12" x2="4" y2="12"></line>
+    <line x1="20" y1="12" x2="23.5" y2="12"></line>
+    <line x1="4.2" y1="4.2" x2="6.7" y2="6.7"></line>
+    <line x1="17.3" y1="17.3" x2="19.8" y2="19.8"></line>
+    <line x1="17.3" y1="6.7" x2="19.8" y2="4.2"></line>
+    <line x1="4.2" y1="19.8" x2="6.7" y2="17.3"></line>
   </svg>
 );
+
+const DropletIcon = () => (
+  <svg className="feature-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path></svg>
+);
+
+const CheckIcon = () => (
+    <svg className="feature-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+);
+
+const iconBgStyle = {
+  backgroundImage: `url(${process.env.PUBLIC_URL + '/button.png'})`
+};
+
 
 
 function App() {
@@ -46,7 +47,8 @@ function App() {
       <header className="app-header">
         <div className="logo">Sunshine & Suds</div>
         <nav className="app-nav">
-          <a href="#how-it-works">How It Works</a>
+          <a href="#details">Details</a>
+          <a href="#about">About</a>
           <a href="#schedule">Schedule Service</a>
         </nav>
       </header>
@@ -57,59 +59,116 @@ function App() {
           <div className="hero-overlay">
             <div className="hero-content">
               <div className="hero-logo-container">
-                {/* Replace '/logo.png' with your actual logo file path */}
                 <img
-                  src={process.env.PUBLIC_URL + '/Pastel Lo.png'}
+                  src={process.env.PUBLIC_URL + '/Pastel Lo.png'} // Your existing logo
                   alt="Sunshine & Suds Logo"
                   className="hero-logo"
                 />
               </div>
-              <h1 className="hero-title">A little sunshine for your week.</h1>
-              <p className="hero-subtitle">
-                Life gets overwhelming. Let us handle the laundry, so you can catch your breath and focus on what truly matters.
+              <p className="hero-subtitle" style={{fontWeight: 500, fontSize: '1.5rem'}}>
+                When the skies are cloudy and you’re feeling overwhelmed, call a friend! We are here to help. Laundry washed and folded, then returned to you within two days. Let the Sunshine in!
               </p>
               <a href="#schedule" className="hero-button">Book a Restful Week</a>
             </div>
           </div>
         </section>
 
-        {/* --- How It Works Section --- */}
-        <section id="how-it-works" className="content-section features-section">
-            <div className="feature">
-                <SunIcon />
-                <h3>1. Schedule a Pickup</h3>
-                <p>Choose a time that works for you. We'll come to your door to pick up your laundry.</p>
+        {/* --- Details Section --- */}
+        <section id="details" className="content-section">
+          <div className="features-grid">
+            <div className="feature-item">
+              <div className="feature-icon-bg" style={iconBgStyle}>
+                <CalendarIcon />
+              </div>
+              <h3>When</h3>
+              <p>Pick up on Sunday, Return by Tuesday. Sign up for a one-time service or for weekly recurring orders!</p>
             </div>
-            <div className="feature">
-                <ShirtIcon />
-                <h3>2. We Wash With Care</h3>
-                <p>We'll wash, dry, and fold your clothes using the detergent of your choice.</p>
+            <div className="feature-item">
+              <div className="feature-icon-bg" style={iconBgStyle}>
+                <DropletIcon />
+              </div>
+              <h3>Detergent</h3>
+              <p>We use Tide with Downy, or Free and Clear. Pick your favorite! If you have your own, please specify on our form and provide it with the laundry pickup.</p>
             </div>
-            <div className="feature">
+            <div className="feature-item">
+              <div className="feature-icon-bg" style={iconBgStyle}>
                 <SparkleIcon />
-                <h3>3. Delivered Fresh</h3>
-                <p>We deliver your fresh, clean laundry back to you, ready to be put away.</p>
+              </div>
+              <h3>Stains</h3>
+              <p>We aren’t magicians, but we will do our best to treat simple stains!</p>
             </div>
+            <div className="feature-item">
+              <div className="feature-icon-bg" style={iconBgStyle}>
+                <CheckIcon />
+              </div>
+              <h3>How To Prepare</h3>
+              <p>Set laundry on your porch by 7:30am on Sunday. Please include hangers for any items you want returned on them. We suggest using a tall kitchen bag for transport.</p>
+            </div>
+            
+          </div>
         </section>
 
+        {/* --- Pricing Section --- */}
+        <section id="pricing" className="content-section">
+          <div className="section-header">
+            <h2>Simple & Clear Pricing</h2>
+          </div>
+          <div className="pricing-content">
+            <div className="price-main">
+              <h3>Standard Laundry</h3>
+              <div className="price-amount"><span className="numbers">$1.85</span> per pound</div>
+              <p><span className="numbers">$35</span> minimum order (approx. <span className="numbers">19</span> lbs)</p>
+              <p>Pay by Venmo @molly-crites</p>
+              <small>*invoice processed and due on day of pickup*</small>
+            </div>
+            <div className="price-large-items">
+              <h3>Larger Items</h3>
+              <ul>
+                <li><strong>Comforters (King/Queen):</strong> <span className="numbers">$35</span></li>
+                <li><strong>Duvet Inserts (King/Queen):</strong> <span className="numbers">$35</span></li>
+                <li><strong>Duvet Inserts (Full/Twin):</strong> <span className="numbers">$20</span></li>
+                <li><strong>Duvet Covers:</strong> <span className="numbers">$12 - $15</span></li>
+                <li><strong>Heavy Duty Blankets:</strong> <span className="numbers">$20</span></li>
+                <li><strong>Blankets/Twin Comforters:</strong> <span className="numbers">$15</span></li>
+                <li><strong>Large Throw Blankets:</strong> <span className="numbers">$8</span></li>
+                <li><strong>Throw Pillows:</strong> <span className="numbers">$10</span></li>
+                <li><strong>Large Bathmats:</strong> <span className="numbers">$8</span></li>
+                <li><strong>Small Bathmats:</strong> <span className="numbers">$5</span></li>
+              </ul>
+            </div>
+          </div>
+           <div className="disclaimer">
+              <p><strong>Please Note:</strong> There is a <span className="numbers">$10</span> no-show fee. We are not liable for items given to us in damaged condition, stains that are set in, or lost pocket prizes. We will do our best, but cannot guarantee that those Lego treasures stored in small pockets make it back in one piece!</p>
+            </div>
+        </section>
+        
         {/* --- About Section --- */}
         <section id="about" className="content-section">
-          <div className="section-header">
-            <h2>Our Mission: A Community That Cares</h2>
-          </div>
           <div className="about-content">
-            <img 
-              src={process.env.PUBLIC_URL + '/about_image.jpg'} 
-              alt="Sunshine & Suds Team" 
-              className="about-image"
-            />
+            <div className="about-image-container">
+              <img 
+                src={process.env.PUBLIC_URL + '/about_image.jpg'} 
+                alt="Molly Crites, founder of Sunshine & Suds" 
+                className="about-image"
+              />
+            </div>
             <div className="about-text">
+              <div className="section-header" style={{textAlign: 'left', marginBottom: '1rem'}}>
+                 <h2>A Little Bit About Me</h2>
+              </div>
               <p>
-                Sunshine & Suds was born from a simple idea: everyone deserves a break. In our fast-paced world, it's easy to feel like you're drowning in chores. We're here to be your sunshine.
+                Howdy! My name is Molly, and for my day job I am a florist, which is a gig that I absolutely love! But, more importantly, I am a mom to five wonderful kids! I understand the overwhelming feeling a mountain of laundry can cause and I would love to brighten your day, and lighten your load! I am praying that Sunshine and Suds can be a blessing to many families in College Station.
               </p>
               <p>
-                This isn't just about laundry; it's about giving you back your time and energy when life gets hectic. It's a small act of service from a neighbor who cares. We're a local, community-focused business dedicated to bringing a little more sunshine into people's lives, one clean load at a time.
+                A couple of years ago, there was a season in our lives that was very difficult. We had sick kiddos, my husband traveled frequently, and we had lots of outside stressors. My sweet Mother-in-Law booked a laundry service for me as a gift because she was states away and couldn't help. It was one of the best gifts for me as a mom of many, and the relief that it brought meant that I could keep up better, sit with sick kiddos guilt free, and feel sane!
               </p>
+              <p>
+                Use Sunshine and Suds for yourself to relieve some of the to-do list, or book for a friend in need! It might seem like a small gesture, but really you are lifting loads!
+              </p>
+              <div className="verse">
+                <p>"I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life."</p>
+                <strong>John <span className="numbers">8:12</span></strong>
+              </div>
             </div>
           </div>
         </section>
@@ -119,24 +178,9 @@ function App() {
            <div className="section-header">
             <h2>Let Us Brighten Your Week</h2>
           </div>
-          <p>Ready for a break? Fill out the form below to schedule your laundry service. It only takes a minute. You can either schedule a one time service or ask us to keep coming back!</p>
-          
-          {/* --- Pricing Section --- */}
-          <div className="pricing-section" style={{ margin: "40px 0 30px 0", textAlign: "center" }}>
-            <h3 style={{ color: "#58b9df", marginBottom: "10px" }}>Simple, Transparent Pricing</h3>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, fontSize: "1.1rem" }}>
-              <li><strong>Standard Wash & Fold:</strong> $20 per load</li>
-              <li><strong>Pickup & Delivery:</strong> Free within College Station</li>
-              <li><strong>Next-Day Service:</strong> +$10 flat fee</li>
-              <li><strong>Recurring Service Discount:</strong> 10% off weekly plans</li>
-            </ul>
-            <div style={{ fontSize: "0.95rem", color: "#888", marginTop: "8px" }}>
-              Special requests? Let us know in the form!
-            </div>
-          </div>
+          <p>Ready for a break? Fill out the order form, bag up your laundry, and enjoy the sunshine! We will sort lights and darks, treat for simple stains, wash, fold and return to you by Tuesday!</p>
           
           <div className="google-form-container">
-            {/* IMPORTANT: Replace the 'src' URL below with the embed link from your own Google Form. */}
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSd_sNrHwxSgU8MSrYhND-ZxODC3f_mJ_oQPaFwiL4XSIseTqQ/viewform?embedded=true"
               width="100%"
