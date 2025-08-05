@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/sunshine-and-suds/static/css/main.ea0ab3bf.css",
-    "main.js": "/sunshine-and-suds/static/js/main.83850692.js",
+    "main.css": "/sunshine-and-suds/static/css/main.61226948.css",
+    "main.js": "/sunshine-and-suds/static/js/main.4f072cf0.js",
     "static/js/453.fbee2d1e.chunk.js": "/sunshine-and-suds/static/js/453.fbee2d1e.chunk.js",
+    "static/media/Bogart-Bold-trial.ttf": "/sunshine-and-suds/static/media/Bogart-Bold-trial.6eabe4954eda937a6190.ttf",
+    "static/media/Bogart-Light-trial.ttf": "/sunshine-and-suds/static/media/Bogart-Light-trial.7a302717e112f7a7cb74.ttf",
     "static/media/splash-image.webp": "/sunshine-and-suds/static/media/splash-image.04d801e13665d27dd5d9.webp",
     "index.html": "/sunshine-and-suds/index.html",
-    "main.ea0ab3bf.css.map": "/sunshine-and-suds/static/css/main.ea0ab3bf.css.map",
-    "main.83850692.js.map": "/sunshine-and-suds/static/js/main.83850692.js.map",
+    "main.61226948.css.map": "/sunshine-and-suds/static/css/main.61226948.css.map",
+    "main.4f072cf0.js.map": "/sunshine-and-suds/static/js/main.4f072cf0.js.map",
     "453.fbee2d1e.chunk.js.map": "/sunshine-and-suds/static/js/453.fbee2d1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea0ab3bf.css",
-    "static/js/main.83850692.js"
+    "static/css/main.61226948.css",
+    "static/js/main.4f072cf0.js"
   ]
 }
