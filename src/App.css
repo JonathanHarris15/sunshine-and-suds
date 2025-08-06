@@ -12,29 +12,44 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Dream Avenue';
+  src: url('./fonts/Dream-Avenue/Dream-Avenue.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Nickainley';
+  src: url('./fonts/nickainley/Nickainley-Normal.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* --- FONT IMPORTS (Calligraphy & Body) --- */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@300;400;700&display=swap');
 
 
 /* --- CSS VARIABLES & GLOBAL STYLES --- */
 :root {
-  --light-blue: #F0F8FF; /* AliceBlue - a very light, soft blue for the new background */
+  --light-blue: #F0F8FF;
   --sky-blue: #58b9df;
   --golden-yellow: #FFD700;
   --dark-text: #555;
-  --background-color: #F0F8FF; /* New Background Color */
-  --font-main: 'Bogart', sans-serif;
-  --font-heading: 'Dancing Script', cursive;
+  --background-color: #F0F8FF; 
+  --font-main: 'Dream Avenue', sans-serif;
+  --font-heading: 'Nickainley', cursive;
 }
 .content-section p {
-  font-family: "Bogart", sans-serif; /* Add this line */
+  font-family: "Dream Avenue", sans-serif;
   font-size: 1.15rem;
   line-height: 1.9;
   max-width: 750px;
   margin: 1rem auto;
 }
 .numbers {
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: 'Dream Avenue', Arial, sans-serif;
   font-variant-numeric: lining-nums;
 }
 html {
@@ -136,8 +151,8 @@ body {
 }
 
 .hero-logo {
-  width: 30vh;
-  max-width: 250px;
+  width: 50vh;
+  transform: translateX(-1.5vw);
   height: auto;
 }
 
@@ -338,13 +353,38 @@ body {
   min-height: 700px;
 }
 
+.form-button {
+  display: inline-block;
+  background-image: url('./form-button.png');
+  background-size: cover;     
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  color: #000000;                 
+  border: none;
+  text-decoration: none;
+  border-radius: 12px;         
+  font-weight: bold;
+  padding: 0;      
+  line-height: 300px;         
+  text-align: center;
+  font-size: 1.2rem;
+  transition: transform 0.1s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.form-button:hover {
+  transform: translateY(-5px);
+}
+
+
 /* --- FOOTER --- */
 .app-footer {
   text-align: center;
   padding: 50px 20px;
   margin-top: 60px;
-  background-color: #e0eaf0;
-  color: var(--sky-blue);
+  background-color: #82b1ee;
+  color: #536ea8;
   font-weight: 400;
 }
 

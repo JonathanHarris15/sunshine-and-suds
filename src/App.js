@@ -1,14 +1,8 @@
 import React from 'react';
 import './App.css';
 
-// --- NEW SVG Icons for your features ---
-
 const CalendarIcon = () => (
   <svg className="feature-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-);
-
-const PriceIcon = () => (
-  <svg className="feature-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
 );
 
 const SparkleIcon = () => (
@@ -39,8 +33,6 @@ const iconBgStyle = {
   backgroundImage: `url(${process.env.PUBLIC_URL + '/button.png'})`
 };
 
-
-
 function App() {
   return (
     <div className="App">
@@ -60,7 +52,7 @@ function App() {
             <div className="hero-content">
               <div className="hero-logo-container">
                 <img
-                  src={process.env.PUBLIC_URL + '/Pastel Lo.png'} // Your existing logo
+                  src={process.env.PUBLIC_URL + '/Pastel Lo.png'}
                   alt="Sunshine & Suds Logo"
                   className="hero-logo"
                 />
@@ -81,7 +73,7 @@ function App() {
                 <CalendarIcon />
               </div>
               <h3>When</h3>
-              <p>Pick up on Sunday, Return by Tuesday. Sign up for a one-time service or for weekly recurring orders!</p>
+              <p>Picked up and delivered within two days. Sign up for a one-time service or for weekly recurring orders!</p>
             </div>
             <div className="feature-item">
               <div className="feature-icon-bg" style={iconBgStyle}>
@@ -178,21 +170,15 @@ function App() {
            <div className="section-header">
             <h2>Let Us Brighten Your Week</h2>
           </div>
-          <p>Ready for a break? Fill out the order form, bag up your laundry, and enjoy the sunshine! We will sort lights and darks, treat for simple stains, wash, fold and return to you by Tuesday!</p>
-          
-          <div className="google-form-container">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSd_sNrHwxSgU8MSrYhND-ZxODC3f_mJ_oQPaFwiL4XSIseTqQ/viewform?embedded=true"
-              width="100%"
-              height="100%"
-              style={{ minHeight: "700px", border: "none" }}
-              frameBorder="0"
-              marginHeight="0"
-              marginWidth="0"
-            >
-              Loading…
-            </iframe>
-          </div>
+          <p>Ready for a break? Click here to fill out the form and enjoy the sunshine! We will sort lights and darks, treat for simple stains, wash, fold and return it to you in two days!</p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd_sNrHwxSgU8MSrYhND-ZxODC3f_mJ_oQPaFwiL4XSIseTqQ/viewform?usp=header"
+            className="form-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Fill Out the Form
+          </a>
         </section>
       </main>
 
