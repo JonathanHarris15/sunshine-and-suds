@@ -94,7 +94,7 @@ function App() {
                 <CheckIcon />
               </div>
               <h3>How To Prepare</h3>
-              <p>Set laundry on your porch by 7:30am on Sunday. Please include hangers for any items you want returned on them. We suggest using a tall kitchen bag for transport.</p>
+              <p>Set laundry on your porch by 7:30am on pick up day. Please include hangers for any items you want returned on them. We suggest using a tall kitchen bag for transport.</p>
             </div>
             
           </div>
