@@ -103,7 +103,7 @@ function App() {
         {/* --- Pricing Section --- */}
         <section id="pricing" className="content-section">
           <div className="section-header">
-            <h2>Simple & Clear Pricing</h2>
+            <h2>Pricing</h2>
           </div>
           <div className="pricing-content">
             <div className="price-main">
@@ -111,7 +111,7 @@ function App() {
               <div className="price-amount"><span className="numbers">$1.85</span> per pound</div>
               <p><span className="numbers">$35</span> minimum order (approx. <span className="numbers">19</span> lbs)</p>
               <p>Pay by Venmo @molly-crites</p>
-              <small>*invoice processed and due on day of pickup*</small>
+              <small className='invoice-disclaimer'>*invoice processed and due on day of pickup*</small>
             </div>
             <div className="price-large-items">
               <h3>Larger Items</h3>
