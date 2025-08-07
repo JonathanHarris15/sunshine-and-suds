@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/sunshine-and-suds/static/css/main.e8879bda.css",
-    "main.js": "/sunshine-and-suds/static/js/main.39df9f51.js",
-    "static/js/453.fbee2d1e.chunk.js": "/sunshine-and-suds/static/js/453.fbee2d1e.chunk.js",
-    "static/media/Bogart-Bold-trial.ttf": "/sunshine-and-suds/static/media/Bogart-Bold-trial.6eabe4954eda937a6190.ttf",
-    "static/media/Bogart-Light-trial.ttf": "/sunshine-and-suds/static/media/Bogart-Light-trial.7a302717e112f7a7cb74.ttf",
-    "static/media/splash-image.webp": "/sunshine-and-suds/static/media/splash-image.04d801e13665d27dd5d9.webp",
-    "static/media/form-button.png": "/sunshine-and-suds/static/media/form-button.bb7d370e8ccfc37e075b.png",
-    "static/media/Dream-Avenue.ttf": "/sunshine-and-suds/static/media/Dream-Avenue.c5cd3fc9b0ec474ff098.ttf",
-    "static/media/Nickainley-Normal.otf": "/sunshine-and-suds/static/media/Nickainley-Normal.4484295cc8d72807de8a.otf",
-    "index.html": "/sunshine-and-suds/index.html",
-    "main.e8879bda.css.map": "/sunshine-and-suds/static/css/main.e8879bda.css.map",
-    "main.39df9f51.js.map": "/sunshine-and-suds/static/js/main.39df9f51.js.map",
-    "453.fbee2d1e.chunk.js.map": "/sunshine-and-suds/static/js/453.fbee2d1e.chunk.js.map"
+    "main.css": "/static/css/main.7a7a3089.css",
+    "main.js": "/static/js/main.a3ab27a1.js",
+    "static/js/453.fbee2d1e.chunk.js": "/static/js/453.fbee2d1e.chunk.js",
+    "static/media/Bogart-Bold-trial.ttf": "/static/media/Bogart-Bold-trial.6eabe4954eda937a6190.ttf",
+    "static/media/Bogart-Light-trial.ttf": "/static/media/Bogart-Light-trial.7a302717e112f7a7cb74.ttf",
+    "static/media/splash-image.webp": "/static/media/splash-image.04d801e13665d27dd5d9.webp",
+    "static/media/form-button.png": "/static/media/form-button.bb7d370e8ccfc37e075b.png",
+    "static/media/Dream-Avenue.ttf": "/static/media/Dream-Avenue.c5cd3fc9b0ec474ff098.ttf",
+    "static/media/Nickainley-Normal.otf": "/static/media/Nickainley-Normal.4484295cc8d72807de8a.otf",
+    "static/media/Ovo-Regular.ttf": "/static/media/Ovo-Regular.a2511df28388e6c5e2c2.ttf",
+    "index.html": "/index.html",
+    "main.7a7a3089.css.map": "/static/css/main.7a7a3089.css.map",
+    "main.a3ab27a1.js.map": "/static/js/main.a3ab27a1.js.map",
+    "453.fbee2d1e.chunk.js.map": "/static/js/453.fbee2d1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8879bda.css",
-    "static/js/main.39df9f51.js"
+    "static/css/main.7a7a3089.css",
+    "static/js/main.a3ab27a1.js"
   ]
 }
