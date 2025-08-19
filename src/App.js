@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 
 const CalendarIcon = () => (
@@ -33,9 +33,51 @@ const iconBgStyle = {
   backgroundImage: `url(${process.env.PUBLIC_URL + '/button.png'})`
 };
 
+const FloatingFlowers = () => {
+  useEffect(() => {
+    const flowers = document.querySelectorAll('.flower');
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      flowers.forEach(flower => {
+        const speed = flower.dataset.speed;
+        const spin = flower.dataset.spin;
+        const yPos = -(scrollY * speed);
+        const rotation = scrollY * spin;
+        flower.style.transform = `translateY(${yPos}px) rotate(${rotation}deg)`;
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div className="flower-background">
+      {/* --- Flowers shifted down --- */}
+      <img src="/flower1.png" className="flower" alt="" style={{ width: '200px', top: '90%', left: '10%' }} data-speed="0.5" data-spin="0.1" />
+      <img src="/flower2.png" className="flower" alt="" style={{ width: '120px', top: '120%', left: '80%' }} data-speed="0.3" data-spin="-0.05" />
+      <img src="/flower3.png" className="flower" alt="" style={{ width: '120px', top: '150%', left: '20%' }} data-speed="0.4" data-spin="0.15" />
+      <img src="/flower4.png" className="flower" alt="" style={{ width: '80px', top: '70%', left: '90%' }} data-speed="0.6" data-spin="-0.1" />
+      <img src="/flower1.png" className="flower" alt="" style={{ width: '90px', top: '160%', left: '60%' }} data-speed="0.2" data-spin="0.08" />
+      <img src="/flower2.png" className="flower" alt="" style={{ width: '160px', top: '65%', left: '30%' }} data-speed="0.45" data-spin="-0.12" />
+      <img src="/flower3.png" className="flower" alt="" style={{ width: '110px', top: '130%', left: '5%' }} data-speed="0.35" data-spin="0.1" />
+      <img src="/flower4.png" className="flower" alt="" style={{ width: '180px', top: '140%', left: '95%' }} data-speed="0.55" data-spin="-0.07" />
+      <img src="/flower2.png" className="flower" alt="" style={{ width: '220px', top: '170%', left: '5%' }} data-speed="0.25" data-spin="0.06" />
+      <img src="/flower4.png" className="flower" alt="" style={{ width: '130px', top: '100%', left: '55%' }} data-speed="0.38" data-spin="-0.08" />
+      <img src="/flower1.png" className="flower" alt="" style={{ width: '100px', top: '135%', left: '40%' }} data-speed="0.52" data-spin="0.11" />
+    </div>
+  );
+};
+
+
 function App() {
   return (
     <div className="App">
+      <FloatingFlowers />
       <header className="app-header">
         <div className="logo">Sunshine & Suds</div>
         <nav className="app-nav">
