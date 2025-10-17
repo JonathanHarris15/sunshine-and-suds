@@ -57,18 +57,18 @@ const FloatingFlowers = () => {
 
   return (
     <div className="flower-background">
-      {/* --- Flowers shifted down --- */}
-      <img src="/flower1.png" className="flower" alt="" style={{ width: '200px', top: '90%', left: '10%' }} data-speed="0.5" data-spin="0.1" />
-      <img src="/flower2.png" className="flower" alt="" style={{ width: '120px', top: '120%', left: '80%' }} data-speed="0.3" data-spin="-0.05" />
-      <img src="/flower3.png" className="flower" alt="" style={{ width: '120px', top: '150%', left: '20%' }} data-speed="0.4" data-spin="0.15" />
-      <img src="/flower4.png" className="flower" alt="" style={{ width: '80px', top: '70%', left: '90%' }} data-speed="0.6" data-spin="-0.1" />
-      <img src="/flower1.png" className="flower" alt="" style={{ width: '90px', top: '160%', left: '60%' }} data-speed="0.2" data-spin="0.08" />
-      <img src="/flower2.png" className="flower" alt="" style={{ width: '160px', top: '65%', left: '30%' }} data-speed="0.45" data-spin="-0.12" />
-      <img src="/flower3.png" className="flower" alt="" style={{ width: '110px', top: '130%', left: '5%' }} data-speed="0.35" data-spin="0.1" />
-      <img src="/flower4.png" className="flower" alt="" style={{ width: '180px', top: '140%', left: '95%' }} data-speed="0.55" data-spin="-0.07" />
-      <img src="/flower2.png" className="flower" alt="" style={{ width: '220px', top: '170%', left: '5%' }} data-speed="0.25" data-spin="0.06" />
-      <img src="/flower4.png" className="flower" alt="" style={{ width: '130px', top: '100%', left: '55%' }} data-speed="0.38" data-spin="-0.08" />
-      <img src="/flower1.png" className="flower" alt="" style={{ width: '100px', top: '135%', left: '40%' }} data-speed="0.52" data-spin="0.11" />
+      {/* --- Flowers with corrected paths --- */}
+      <img src={process.env.PUBLIC_URL + '/flower1.png'} className="flower" alt="" style={{ width: '200px', top: '90%', left: '10%' }} data-speed="0.5" data-spin="0.1" />
+      <img src={process.env.PUBLIC_URL + '/flower2.png'} className="flower" alt="" style={{ width: '120px', top: '120%', left: '80%' }} data-speed="0.3" data-spin="-0.05" />
+      <img src={process.env.PUBLIC_URL + '/flower3.png'} className="flower" alt="" style={{ width: '120px', top: '150%', left: '20%' }} data-speed="0.4" data-spin="0.15" />
+      <img src={process.env.PUBLIC_URL + '/flower4.png'} className="flower" alt="" style={{ width: '80px', top: '70%', left: '90%' }} data-speed="0.6" data-spin="-0.1" />
+      <img src={process.env.PUBLIC_URL + '/flower1.png'} className="flower" alt="" style={{ width: '90px', top: '160%', left: '60%' }} data-speed="0.2" data-spin="0.08" />
+      <img src={process.env.PUBLIC_URL + '/flower2.png'} className="flower" alt="" style={{ width: '160px', top: '65%', left: '30%' }} data-speed="0.45" data-spin="-0.12" />
+      <img src={process.env.PUBLIC_URL + '/flower3.png'} className="flower" alt="" style={{ width: '110px', top: '130%', left: '5%' }} data-speed="0.35" data-spin="0.1" />
+      <img src={process.env.PUBLIC_URL + '/flower4.png'} className="flower" alt="" style={{ width: '180px', top: '140%', left: '95%' }} data-speed="0.55" data-spin="-0.07" />
+      <img src={process.env.PUBLIC_URL + '/flower2.png'} className="flower" alt="" style={{ width: '220px', top: '170%', left: '5%' }} data-speed="0.25" data-spin="0.06" />
+      <img src={process.env.PUBLIC_URL + '/flower4.png'} className="flower" alt="" style={{ width: '130px', top: '100%', left: '55%' }} data-speed="0.38" data-spin="-0.08" />
+      <img src={process.env.PUBLIC_URL + '/flower1.png'} className="flower" alt="" style={{ width: '100px', top: '135%', left: '40%' }} data-speed="0.52" data-spin="0.11" />
     </div>
   );
 };
@@ -122,7 +122,7 @@ function App() {
                 <DropletIcon />
               </div>
               <h3>Detergent</h3>
-              <p>We use Tide with Downy, or Free and Clear. Pick your favorite! If you have your own, please specify on our form and provide it with the laundry pickup.</p>
+              <p>We use Tide with Downy, Free and Clear or Washed Up Goods Non-toxic soaps- pick your favorite! If you have your own, please specify on our form and provide it with the laundry pickup.</p>
             </div>
             <div className="feature-item">
               <div className="feature-icon-bg" style={iconBgStyle}>
@@ -136,7 +136,7 @@ function App() {
                 <CheckIcon />
               </div>
               <h3>How To Prepare</h3>
-              <p>Set laundry on your porch by 7:30am on pick up day. Please include hangers for any items you want returned on them. We suggest using a tall kitchen bag for transport.</p>
+              <p>Set your laundry on the porch by 7:30am pick up day! Please specify on the form if any items need hung up! We suggest using a tall kitchen bag for transport.</p>
             </div>
             
           </div>
